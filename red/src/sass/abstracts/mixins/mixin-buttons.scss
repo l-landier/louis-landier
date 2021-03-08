@@ -1,0 +1,15 @@
+@mixin button($color-text, $background, $color-text-hover, $background-hover, $border) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-text;
+  background: $background;
+  border: $border;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-text-hover;
+    background: $background-hover;
+  }
+}
