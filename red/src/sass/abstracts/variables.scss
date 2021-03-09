@@ -1,0 +1,56 @@
+// COLORS //
+
+$none: transparent;
+$white: #FFFFFF;
+$black: #0F1221;
+$primary: #F9012D;
+$secondary: #F9830F;
+$third: #870017;
+$grey-dark: #a8afbc;
+$gradient-button: linear-gradient(0.75turn, $secondary, $primary);
+
+// Font-Weight //
+$font-weight-light: 100;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 900;
+
+// Radius //
+$radius-button: 8px;
+$radius-container: 30px;
+
+// Gutter //
+$gutter: 10px;
+
+// Screen //
+$screen-mobile: 500px;
+$screen-mobile-min: ($screen-mobile + 1);
+$screen-tablet: 768px;
+$screen-tablet-min: ($screen-tablet + 1);
+$screen-laptop: 1200px;
+$screen-laptop-min: ($screen-laptop + 1);
+$screen-desktop: 2560px;
+
+// SHADOWS //
+$shadow-z-1: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.2);
+$shadow-z-2: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.05),
+  0 2px 4px 0 rgba(103, 110, 144, 0.08), 0 3px 4px 0 rgba(103, 110, 144, 0.05);
+$shadow-z-4: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.05),
+  0 2px 4px 0 rgba(103, 110, 144, 0.08), 0 6px 8px 0 rgba(103, 110, 144, 0.05), 0 16px 16px 0 rgba(103, 110, 144, 0.04);
+
+// FONTS //
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+// FONTS-SIZE //
+$mega-font-size: 52px;
+$hero-font-size: 46px;
+$lead-font-size: 32px;
+$h1-font-size: 28px;
+$h2-font-size: 24px;
+$h3-font-size: 22px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$body-font-size: 16px;
+$regular-font-size: 14px;
+$small-font-size: 12px;
