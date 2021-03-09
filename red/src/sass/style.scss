@@ -2,6 +2,7 @@
 
 // 1. abstracts - colors, shadow, media query definition, mixins
 @import 'abstracts/variables';
+@import 'abstracts/mixins/mixin-animations';
 @import 'abstracts/mixins/mixin-buttons';
 
 // 2. vendors

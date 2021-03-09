@@ -1,0 +1,22 @@
+@mixin transition-custom($types...) {
+  $transitions: '';
+
+  @each $type in $types {
+    @if ($transitions != '') {
+      $transitions: $transitions + ', ';
+    }
+    $transitions: $transitions + $type + ' 0.3s ease';
+  }
+
+  transition: unquote($transitions);
+}
+
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}

@@ -1,15 +1,56 @@
-@mixin button($color-text, $background, $color-text-hover, $background-hover, $border) {
+@mixin button($color-text, $background, $color-text-hover, $background-hover) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: $color-text;
+  font-family: $primary-font;
+  font-size: $body-font-size;
+  border-radius: $radius-button;
+  padding: $gutter $gutter * 2;
   background: $background;
-  border: $border;
+  background-size: 100% 1px;
+  color: $color-text;
+  flex: 0 0 auto;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+
+  @include transition-custom(background-size);
+
+  &:visited {
+    text-decoration: none;
+    outline-width: 0;
+    color: $color-text;
+    background-color: $background;
+    cursor: pointer;
+  }
 
   &:hover,
   &:focus,
   &:active {
+    text-decoration: none;
+    outline-width: 0;
     color: $color-text-hover;
-    background: $background-hover;
+    background-size: 150% 1px;
+    cursor: pointer;
+    @include transition-custom(background-size);
+  }
+
+  &[disabled] {
+    background: $grey-dark;
+    color: $white;
+
+    &:hover {
+      cursor: not-allowed;
+      box-shadow: none;
+      background: $grey-dark;
+    }
+  }
+
+  @media (max-width: $screen-mobile) {
+    font-size: $regular-font-size;
+    width: 100%;
+    min-width: 100%;
   }
 }
