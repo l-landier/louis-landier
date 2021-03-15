@@ -1,21 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
+  //mode: 'development',
+  mode: 'production',
   entry: {
-    index: './src/js/index.js',
-    style: './src/js/style.js',
+    'index' : './src/js/index.js',
+    'style': './src/sass/style.scss',
   },
-  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index.html'
-    }),
-  ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -24,19 +20,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader',
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -44,4 +33,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
+    new MiniCssExtractPlugin({
+        filename: '[name].[chunkhash:8].css',
+    }),
+  ],
 };
