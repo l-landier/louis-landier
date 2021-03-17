@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-variant-ligatures: none;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//tricks to target IE 10 and above only
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  * {
+    max-width: 100%;
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $body-font-size;
+  color: $black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  @media (max-width: $screen-laptop) {
+    font-size: $regular-font-size;
+  }
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  &:focus,
+  &:visited {
+    text-decoration: none;
+    outline-style: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+// Links
+
+a {
+  color: $primary;
+  text-decoration: none;
+  font-family: $primary-font;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $secondary;
+    cursor: pointer;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+div,
+figure {
+  margin: 0;
+  font-family: $primary-font;
+}
+
+p,
+span {
+  line-height: 1.5;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+/* Change Autocomplete styles in Chrome */
+input,
+textarea,
+select {
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(103, 110, 144, 0.19), 0 0 1px 0 rgba(103, 110, 144, 0.95);
+    -webkit-text-fill-color: $black;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      -webkit-box-shadow: 0 1px 1px 0 rgba(103, 110, 144, 0.19), 0 0 1px 0 rgba(103, 110, 144, 0.95);
+      -webkit-text-fill-color: $black;
+      background-color: $white;
+    }
+  }
+}

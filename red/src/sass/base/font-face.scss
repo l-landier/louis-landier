@@ -1,4 +1,17 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Raleway.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+  font-family: "Raleway Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway Medium";
+  src: url("../fonts/Raleway-Medium.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
 }

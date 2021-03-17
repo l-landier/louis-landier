@@ -4,11 +4,16 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins/mixin-animations';
 @import 'abstracts/mixins/mixin-buttons';
+@import 'abstracts/mixins/clearfix';
+@import 'abstracts/mixins/grid-framework';
+@import 'abstracts/mixins/grid';
+@import 'abstracts/grid';
 
 // 2. vendors
 
 // 3. base - fonts and reset
 @import 'base/font-face';
+@import 'base/reset';
 
 // 4. components - atom, molecule, organism
 // components atom
@@ -17,3 +22,12 @@
 //components molecule
 
 //components organism
+
+// 5. layout – display layout of components
+@import 'layout/containers';
+
+// 7. utils – generic classes to manage generic behavior
+@import 'utils/paddings';
+@import 'utils/margins';
+@import 'utils/display';
+@import 'utils/colors';

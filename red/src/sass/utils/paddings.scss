@@ -1,0 +1,279 @@
+.padding-0 {
+  padding: 0;
+}
+
+.padding-xs {
+  padding: $gutter;
+}
+
+.padding-sm {
+  padding: 2 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding: $gutter;
+  }
+}
+
+.padding-md {
+  padding: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding: 2 * $gutter;
+  }
+}
+
+.padding-l {
+  padding: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding: 2 * $gutter;
+  }
+}
+
+.padding-lg {
+  padding: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding: 3 * $gutter;
+  }
+}
+
+.padding-xl {
+  padding: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding: 4 * $gutter;
+  }
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-top-xs {
+  padding-top: $gutter;
+}
+
+.padding-top-sm {
+  padding-top: 2 * $gutter;
+}
+
+.padding-top-md {
+  padding-top: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 2 * $gutter;
+  }
+}
+
+.padding-top-l {
+  padding-top: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 2 * $gutter;
+  }
+}
+
+.padding-top-lg {
+  padding-top: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 3 * $gutter;
+  }
+}
+
+.padding-top-xl {
+  padding-top: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 4 * $gutter;
+  }
+}
+
+.padding-bottom-xs {
+  padding-bottom: $gutter;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 2 * $gutter;
+}
+
+.padding-bottom-md {
+  padding-bottom: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-bottom: 2 * $gutter;
+  }
+}
+
+.padding-bottom-l {
+  padding-bottom: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-bottom: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-bottom: 2 * $gutter;
+  }
+}
+
+.padding-bottom-lg {
+  padding-bottom: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-bottom: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-bottom: 3 * $gutter;
+  }
+}
+
+.padding-bottom-xl {
+  padding-bottom: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-bottom: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-bottom: 4 * $gutter;
+  }
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-left-xs {
+  padding-left: $gutter;
+}
+
+.padding-left-sm {
+  padding-left: 2 * $gutter;
+}
+
+.padding-left-md {
+  padding-left: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-left: 2 * $gutter;
+  }
+}
+
+.padding-left-l {
+  padding-left: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-left: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-left: 2 * $gutter;
+  }
+}
+
+.padding-left-lg {
+  padding-left: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-left: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-left: 3 * $gutter;
+  }
+}
+
+.padding-left-xl {
+  padding-left: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-left: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-left: 4 * $gutter;
+  }
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.padding-right-xs {
+  padding-right: $gutter;
+}
+
+.padding-right-sm {
+  padding-right: 2 * $gutter;
+}
+
+.padding-right-md {
+  padding-right: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-right: 2 * $gutter;
+  }
+}
+
+.padding-right-l {
+  padding-right: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-right: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-right: 2 * $gutter;
+  }
+}
+
+.padding-right-lg {
+  padding-right: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-right: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-right: 3 * $gutter;
+  }
+}
+
+.padding-right-xl {
+  padding-right: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    padding-right: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-right: 4 * $gutter;
+  }
+}
