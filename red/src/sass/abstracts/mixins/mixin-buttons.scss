@@ -1,11 +1,11 @@
-@mixin button($color-text, $background, $color-text-hover, $background-hover) {
+@mixin button($color-text, $background, $color-text-hover, $background-hover, $border) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: $primary-font;
+  font-family: $primary-regular;
   font-size: $body-font-size;
   border-radius: $radius-button;
-  padding: $gutter $gutter * 2;
+  padding: $gutter / 2 $gutter * 2;
   background: $background;
   background-size: 100% 1px;
   color: $color-text;
@@ -15,8 +15,11 @@
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
+  line-height: normal;
+  border: solid 1px $border;
+  box-shadow: 0 15px 25px 6px rgba(249, 1, 45, .3);
 
-  @include transition-custom(background-size);
+  @include transition-custom(background-color);
 
   &:visited {
     text-decoration: none;
@@ -32,9 +35,10 @@
     text-decoration: none;
     outline-width: 0;
     color: $color-text-hover;
+    background-color: $background-hover;
     background-size: 150% 1px;
     cursor: pointer;
-    @include transition-custom(background-size);
+    @include transition-custom(background-color);
   }
 
   &[disabled] {

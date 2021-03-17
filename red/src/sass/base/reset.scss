@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $primary-regular;
   font-size: $body-font-size;
   color: $black;
   line-height: 1.5;
@@ -67,7 +67,7 @@ input[type='number'] {
 a {
   color: $primary;
   text-decoration: none;
-  font-family: $primary-font;
+  font-family: $primary-regular;
 
   &:hover,
   &:focus {
@@ -94,7 +94,7 @@ li,
 div,
 figure {
   margin: 0;
-  font-family: $primary-font;
+  font-family: $primary-regular;
 }
 
 p,

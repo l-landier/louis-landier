@@ -5,7 +5,7 @@ $white: #FFFFFF;
 $black: #0F1221;
 $primary: #F9012D;
 $secondary: #F9830F;
-$third: #870017;
+$third: #FCEAE2;
 $grey-dark: #a8afbc;
 $gradient-button: linear-gradient(0.75turn, $secondary, $primary);
 
@@ -39,13 +39,15 @@ $shadow-z-4: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144,
   0 2px 4px 0 rgba(103, 110, 144, 0.08), 0 6px 8px 0 rgba(103, 110, 144, 0.05), 0 16px 16px 0 rgba(103, 110, 144, 0.04);
 
 // FONTS //
-$primary-font: 'Raleway', sans-serif;
+$primary-light: 'Raleway Light', sans-serif;
+$primary-regular: 'Raleway Regular', sans-serif;
+$primary-medium: 'Raleway Medium', sans-serif;
+$primary-bold: 'Raleway Bold', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 
 // FONTS-SIZE //
-$mega-font-size: 52px;
+$mega-font-size: 42px;
 $hero-font-size: 46px;
-$lead-font-size: 32px;
 $h1-font-size: 28px;
 $h2-font-size: 24px;
 $h3-font-size: 22px;

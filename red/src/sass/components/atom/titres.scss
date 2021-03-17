@@ -1,0 +1,19 @@
+.mega-title {
+  font-family: $primary-medium;
+  font-size: $mega-font-size;
+  line-height: normal;
+
+  @media (max-width: $screen-mobile) {
+    font-size: $h1-font-size;
+  }
+}
+
+.h1-title {
+  font-family: $primary-medium;
+  font-size: $h1-font-size;
+  line-height: normal;
+
+  @media (max-width: $screen-mobile) {
+    font-size: $h3-font-size;
+  }
+}

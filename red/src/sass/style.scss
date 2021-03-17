@@ -18,6 +18,9 @@
 // 4. components - atom, molecule, organism
 // components atom
 @import 'components/atom/primary-button';
+@import 'components/atom/secondary-button';
+@import 'components/atom/titres';
+@import 'components/atom/text';
 
 //components molecule
 
@@ -29,5 +32,5 @@
 // 7. utils – generic classes to manage generic behavior
 @import 'utils/paddings';
 @import 'utils/margins';
-@import 'utils/display';
 @import 'utils/colors';
+@import 'utils/display';

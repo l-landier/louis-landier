@@ -1,0 +1,3 @@
+.secondary-button {
+  @include button($primary, $white, $white, $primary, $primary);
+}
