@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Raleway Bold';
+  src: url("../fonts/raleway-800.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Raleway Medium';
   src: url("../fonts/raleway-600.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
   font-display: swap;

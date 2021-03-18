@@ -7,6 +7,7 @@
 @import 'abstracts/mixins/clearfix';
 @import 'abstracts/mixins/grid-framework';
 @import 'abstracts/mixins/grid';
+@import 'abstracts/mixins/inputs';
 @import 'abstracts/grid';
 
 // 2. vendors
@@ -20,17 +21,25 @@
 @import 'components/atom/primary-button';
 @import 'components/atom/secondary-button';
 @import 'components/atom/titres';
-@import 'components/atom/text';
+@import 'components/atom/fonts';
+@import 'components/atom/images';
+@import 'components/atom/inputs';
 
 //components molecule
+@import 'components/molecule/header-inte';
+@import 'components/molecule/timeline';
 
 //components organism
+@import 'components/organism/border-radius';
 
 // 5. layout – display layout of components
 @import 'layout/containers';
 
 // 7. utils – generic classes to manage generic behavior
+@import 'utils/visibility';
 @import 'utils/paddings';
 @import 'utils/margins';
+@import 'utils/texts';
 @import 'utils/colors';
+@import 'utils/positions';
 @import 'utils/display';

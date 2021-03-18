@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>732244</title>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FINAL-INTE" transform="translate(-643.000000, -3330.000000)" fill-rule="nonzero">
+            <g id="outils-copy" transform="translate(129.000000, 2998.000000)">
+                <g id="732244" transform="translate(514.000000, 332.000000)">
+                    <path d="M150,75 C150,77.3173828 149.895996,79.6072266 149.687695,81.8695312 C149.528613,83.6604492 149.301855,85.4296875 149.01416,87.177832 C143.197852,122.807227 112.273535,150 75,150 C56.0141602,150 38.6786133,142.94707 25.4663086,131.31416 C20.5836914,127.019238 16.2641602,122.096777 12.6336914,116.672461 C4.65292969,104.755078 0,90.4195313 0,75 C0,33.5786133 33.5786133,0 75,0 C116.421387,0 150,33.5786133 150,75 Z" id="Path-Copy" fill="#F2F2F2"></path>
+                    <polygon id="Path" fill="#FFD54F" points="35 63.756 35 27.756 75 20.244 115 27.756 115 63.756"></polygon>
+                    <polygon id="Path" fill="#FFECB3" points="35 63.756 75 20.244 115 63.756"></polygon>
+                    <polygon id="Path" fill="#FFA000" points="11 63.756 75 139.756 139 63.756"></polygon>
+                    <polygon id="Path" fill="#FFCA28" points="35 63.756 75 139.756 115 63.756"></polygon>
+                    <g id="Group" transform="translate(11.000000, 27.750000)" fill="#FFC107">
+                        <polygon id="Path" points="0 36.006 24 0.006 24 36.006"></polygon>
+                        <polygon id="Path" points="104 0.006 104 36.006 128 36.006"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

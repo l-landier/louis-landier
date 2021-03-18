@@ -24,7 +24,7 @@ body {
   font-family: $primary-regular;
   font-size: $body-font-size;
   color: $black;
-  line-height: 1.5;
+  line-height: normal;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   max-width: 100%;
@@ -99,7 +99,7 @@ figure {
 
 p,
 span {
-  line-height: 1.5;
+  line-height: normal;
   margin: 0;
 }
 

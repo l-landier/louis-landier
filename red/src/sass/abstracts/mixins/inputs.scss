@@ -1,0 +1,22 @@
+@mixin input-custom {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  background: $white;
+  border-radius: $radius-button;
+  padding: $gutter / 2 2 * $gutter;
+  border: 0;
+  box-shadow: $shadow-input;
+
+  &:active,
+  &:focus {
+    box-shadow: $shadow-input-focus;
+    outline: 0;
+  }
+
+  /* fix ios zoom on input */
+  @media (max-width: $screen-laptop) {
+    font-size: $body-font-size;
+  }
+}
