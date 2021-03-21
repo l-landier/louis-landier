@@ -1,17 +1,35 @@
 /* Text-color */
 .dark-text {
   color: $black;
+
+  @media (prefers-color-scheme: $dark-mode) {
+    color: $white;
+  }
 }
 
 .dark-red {
   color: $primary-dark;
+
+  @media (prefers-color-scheme: $dark-mode) {
+    color: $white;
+  }
 }
 
 /* Background-color */
 .white-bg {
   background-color: $white;
+
+  @media (prefers-color-scheme: $dark-mode) {
+    background: $black;
+    color: $white;
+  }
 }
 
 .third-bg {
   background-color: $third;
+
+  @media (prefers-color-scheme: $dark-mode) {
+    background: $dark-red;
+    color: $white;
+  }
 }

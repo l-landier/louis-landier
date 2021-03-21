@@ -1,3 +1,8 @@
 .input-custom {
   @include input-custom;
+
+  @media (prefers-color-scheme: $dark-mode) {
+    background: $black;
+    box-shadow: $gradient-primary;
+  }
 }
