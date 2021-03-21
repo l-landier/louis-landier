@@ -1,0 +1,271 @@
+.margin-0 {
+  margin: 0;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-xs {
+  margin: $gutter;
+}
+
+.margin-sm {
+  margin: 2 * $gutter;
+}
+
+.margin-md {
+  margin: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin: 2 * $gutter;
+  }
+}
+
+.margin-l {
+  margin: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin: 2 * $gutter;
+  }
+}
+
+.margin-lg {
+  margin: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin: 3 * $gutter;
+  }
+}
+
+.margin-xl {
+  margin: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin: 4 * $gutter;
+  }
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-top-xs {
+  margin-top: $gutter;
+}
+
+.margin-top-sm {
+  margin-top: 2 * $gutter;
+}
+
+.margin-top-md {
+  margin-top: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-top: 2 * $gutter;
+  }
+}
+
+.margin-top-l {
+  margin-top: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-top: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-top: 2 * $gutter;
+  }
+}
+
+.margin-top-lg {
+  margin-top: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-top: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-top: 3 * $gutter;
+  }
+}
+
+.margin-top-xl {
+  margin-top: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-top: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-top: 4 * $gutter;
+  }
+}
+
+.margin-bottom-xs {
+  margin-bottom: $gutter;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2 * $gutter;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 2 * $gutter;
+  }
+}
+
+.margin-bottom-l {
+  margin-bottom: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-bottom: 2 * $gutter;
+  }
+}
+
+.margin-bottom-lg {
+  margin-bottom: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-bottom: 3 * $gutter;
+  }
+}
+
+.margin-bottom-xl {
+  margin-bottom: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-bottom: 4 * $gutter;
+  }
+}
+
+.margin-left-xs {
+  margin-left: $gutter;
+}
+
+.margin-left-sm {
+  margin-left: 2 * $gutter;
+}
+
+.margin-left-md {
+  margin-left: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-left: 2 * $gutter;
+  }
+}
+
+.margin-left-l {
+  margin-left: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-left: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-left: 2 * $gutter;
+  }
+}
+
+.margin-left-lg {
+  margin-left: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-left: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-left: 3 * $gutter;
+  }
+}
+
+.margin-left-xl {
+  margin-left: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-left: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-left: 4 * $gutter;
+  }
+}
+
+.margin-right-xs {
+  margin-right: $gutter;
+}
+
+.margin-right-sm {
+  margin-right: 2 * $gutter;
+}
+
+.margin-right-md {
+  margin-right: 3 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-right: 2 * $gutter;
+  }
+}
+
+.margin-right-l {
+  margin-right: 4 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-right: 3 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-right: 2 * $gutter;
+  }
+}
+
+.margin-right-lg {
+  margin-right: 5 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-right: 4 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-right: 3 * $gutter;
+  }
+}
+
+.margin-right-xl {
+  margin-right: 6 * $gutter;
+
+  @media (max-width: $screen-tablet) {
+    margin-right: 5 * $gutter;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-right: 4 * $gutter;
+  }
+}

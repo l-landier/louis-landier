@@ -5,7 +5,9 @@ $white: #FFFFFF;
 $black: #0F1221;
 $primary: #F9012D;
 $secondary: #F9830F;
-$third: #870017;
+$third: #FCEAE2;
+$primary-dark: #870017;
+$grey-light: #F7F7F7;
 $grey-dark: #a8afbc;
 $gradient-button: linear-gradient(0.75turn, $secondary, $primary);
 
@@ -27,25 +29,24 @@ $screen-mobile: 500px;
 $screen-mobile-min: ($screen-mobile + 1);
 $screen-tablet: 768px;
 $screen-tablet-min: ($screen-tablet + 1);
-$screen-laptop: 1200px;
+$screen-laptop: 1000px;
 $screen-laptop-min: ($screen-laptop + 1);
-$screen-desktop: 2560px;
+$screen-desktop: 1200px;
 
 // SHADOWS //
-$shadow-z-1: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.2);
-$shadow-z-2: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.05),
-  0 2px 4px 0 rgba(103, 110, 144, 0.08), 0 3px 4px 0 rgba(103, 110, 144, 0.05);
-$shadow-z-4: 0 0 2px 0 rgba(103, 110, 144, 0.1), 0 1px 2px 0 rgba(103, 110, 144, 0.05),
-  0 2px 4px 0 rgba(103, 110, 144, 0.08), 0 6px 8px 0 rgba(103, 110, 144, 0.05), 0 16px 16px 0 rgba(103, 110, 144, 0.04);
+$shadow-input: 0 12px 33px 0 rgba(108, 108, 108, .2);
+$shadow-input-focus: 0 12px 33px 0 rgba(108, 108, 108, .6);
 
 // FONTS //
-$primary-font: 'Raleway', sans-serif;
+$primary-light: 'Raleway Light', sans-serif;
+$primary-regular: 'Raleway Regular', sans-serif;
+$primary-medium: 'Raleway Medium', sans-serif;
+$primary-bold: 'Raleway Bold', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 
 // FONTS-SIZE //
-$mega-font-size: 52px;
+$mega-font-size: 42px;
 $hero-font-size: 46px;
-$lead-font-size: 32px;
 $h1-font-size: 28px;
 $h2-font-size: 24px;
 $h3-font-size: 22px;
@@ -54,3 +55,62 @@ $h5-font-size: 18px;
 $body-font-size: 16px;
 $regular-font-size: 14px;
 $small-font-size: 12px;
+
+// OVERRIDE BOOTSTRAP VARIABLES //
+//== Grid system
+//
+//## Define your custom responsive grid.
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  $screen-mobile;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  $screen-tablet !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  $screen-laptop !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  $screen-desktop !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//** Number of columns in the grid.
+$grid-columns: 12;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 2 * $gutter;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+$screen-sm: $screen-mobile-min;
+$screen-md: $screen-tablet-min;
+$screen-lg: $screen-laptop;
+$font-size-base: $body-font-size;

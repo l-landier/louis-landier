@@ -1,0 +1,17 @@
+.navbar-menu-icon {
+  display: block;
+  width: 3 * $gutter;
+  height: 4px;
+  border-radius: $radius-button;
+  background: $primary;
+  @include transition-custom(all);
+
+  &:nth-child(2n) {
+    margin-top: $gutter / 2;
+    margin-bottom: $gutter / 2;
+  }
+
+  @media (min-width: $screen-mobile-min) {
+    display: none;
+  }
+}

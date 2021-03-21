@@ -13,7 +13,7 @@ module.exports = {
     contentBase: './dist',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -34,11 +34,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({
+        //filename: '[name].[chunkhash:8].css',
+        filename: '[name].[chunkhash:8].css',
+    }),
+    require('autoprefixer'),
     new HtmlWebpackPlugin({
       template: 'index.html'
-    }),
-    new MiniCssExtractPlugin({
-        filename: '[name].[chunkhash:8].css',
     }),
   ],
 };

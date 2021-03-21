@@ -1,0 +1,37 @@
+.timeline {
+  padding-left: 80px;
+  padding-bottom: 8 * $gutter;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background: $third;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: -$gutter;
+    left: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background: $grey-light;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 22px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}

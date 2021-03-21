@@ -1,4 +1,23 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Raleway.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+  font-family: 'Raleway Bold';
+  src: url("../fonts/raleway-800.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url("../fonts/raleway-600.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("../fonts/raleway-regular.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url("../fonts/raleway-100.woff") format("woff"); // adapter l'url en fonction du nom de votre fichier
+  font-display: swap;
 }

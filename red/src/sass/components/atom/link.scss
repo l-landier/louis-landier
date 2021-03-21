@@ -1,0 +1,36 @@
+.link {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: $primary;
+
+    @include transition-custom(all);
+  }
+
+  &:visited {
+    text-decoration: none;
+    outline-width: 0;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    &::before {
+      width: 100%;
+
+      @include transition-custom(all);
+    }
+  }
+}

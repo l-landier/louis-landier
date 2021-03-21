@@ -1,0 +1,9 @@
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: $screen-desktop;
+
+  @media (max-width: $screen-desktop) {
+    padding: 0 $gutter;
+  }
+}
