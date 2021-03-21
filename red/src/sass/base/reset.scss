@@ -65,14 +65,13 @@ input[type='number'] {
 // Links
 
 a {
-  color: $primary;
   text-decoration: none;
   font-family: $primary-regular;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $secondary;
+    color: $primary;
     cursor: pointer;
   }
 }

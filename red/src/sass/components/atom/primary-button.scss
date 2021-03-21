@@ -1,3 +1,3 @@
 .primary-button {
-  @include button($white, $gradient-button, $white, $gradient-button, $none);
+  @include button($white, $gradient-button, $white, $gradient-button);
 }

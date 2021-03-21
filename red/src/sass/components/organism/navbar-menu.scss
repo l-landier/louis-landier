@@ -1,0 +1,41 @@
+.navbar-menu {
+  @media (max-width: $screen-mobile) {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+
+    @include transition-custom(max-height);
+  }
+}
+
+.navbar-menu-check {
+  display: none;
+
+  &:checked {
+    ~ {
+      .navbar-menu {
+        max-height: 1000px;
+
+        @include transition-custom(max-height);
+      }
+      label .navbar-menu-icon {
+        display: none;
+
+        &:first-child {
+          display: block;
+          @include transition-custom(all);
+          transform: rotate(45deg) translateX(3px);
+        }
+        &:last-child {
+          display: block;
+          @include transition-custom(all);
+          transform: rotate(-45deg) translateX(3px);
+        }
+      }
+    }
+  }
+}

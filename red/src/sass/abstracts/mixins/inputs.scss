@@ -5,13 +5,15 @@
   display: inline-block;
   background: $white;
   border-radius: $radius-button;
-  padding: $gutter / 2 2 * $gutter;
+  padding: $gutter 2 * $gutter;
   border: 0;
   box-shadow: $shadow-input;
+  border: solid 1px $none;
 
   &:active,
   &:focus {
     box-shadow: $shadow-input-focus;
+    border: solid 1px $primary;
     outline: 0;
   }
 

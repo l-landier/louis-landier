@@ -5,11 +5,27 @@
   text-shadow: 3px 8px 32px rgba(108, 108, 108, .1);
   font-family: $primary-bold;
   z-index: 2;
+
+  @media (max-width: $screen-tablet) {
+    font-size: 150px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    font-size: 140px;
+  }
 }
 
 .header-ui {
   @extend .header-inte;
   font-size: 150px;
+
+  @media (max-width: $screen-tablet) {
+    font-size: 105px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    font-size: 100px;
+  }
 }
 
 .header-inte-sep {
@@ -21,4 +37,8 @@
   font-size: 170px;
   font-family: $primary-bold;
   color: $primary;
+
+  @media (max-width: $screen-mobile) {
+    font-size: 130px;
+  }
 }

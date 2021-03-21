@@ -1,3 +1,4 @@
 .secondary-button {
-  @include button($primary, $white, $white, $primary, $primary);
+  @include button($primary, $white, $white, $primary);
+  border: solid 1px $primary;
 }
