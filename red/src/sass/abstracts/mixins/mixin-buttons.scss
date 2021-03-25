@@ -16,9 +16,10 @@
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   line-height: normal;
-  box-shadow: 0 15px 25px 6px rgba(249, 1, 45, .3);
+  box-shadow: $gradient-primary;
   position: relative;
   overflow: hidden;
+  @include transition-custom(all);
 
   &::after {
     content: '';
@@ -31,16 +32,13 @@
     background: $background-hover;
     z-index: 1;
 
-    @include transition-custom(all);
+    transition: all 1s ease;
   }
-
-  @include transition-custom(background-color);
 
   &:visited {
     text-decoration: none;
     outline-width: 0;
     color: $color-text;
-    background-color: $background;
     cursor: pointer;
   }
 
@@ -53,11 +51,11 @@
     background-color: $background-hover;
     background-size: 150% 1px;
     cursor: pointer;
-    @include transition-custom(background-color);
+    @include transition-custom(all);
 
     &::after {
-      width: 200%;
-      @include transition-custom(all);
+      width: 300%;
+      transition: all 1s ease;
     }
   }
 

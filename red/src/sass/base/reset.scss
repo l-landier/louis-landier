@@ -33,6 +33,10 @@ body {
   @media (max-width: $screen-laptop) {
     font-size: $regular-font-size;
   }
+
+  @media (prefers-color-scheme: $dark-mode) {
+    background: $black;
+  }
 }
 
 // Reset fonts for relevant elements
