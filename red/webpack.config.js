@@ -1,10 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 
 module.exports = {
-  //mode: 'development',
-  mode: 'production',
+  mode: 'development',
+  //mode: 'production',
   entry: {
     'index' : './src/js/index.js',
     'style': './src/sass/style.scss',
@@ -35,12 +36,24 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-        //filename: '[name].[chunkhash:8].css',
-        filename: '[name].[chunkhash:8].css',
+        filename: '[name].css',
     }),
     require('autoprefixer'),
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
+    new HtmlCriticalWebpackPlugin({
+      base: path.resolve(__dirname, 'dist'),
+      src: 'index.html',
+      dest: 'index.html',
+      inline: true,
+      minify: true,
+      extract: true,
+      width: 375,
+      height: 812,
+      penthouse: {
+        blockJSRequests: false,
+      }
+    })
   ],
 };

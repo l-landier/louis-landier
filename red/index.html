@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Louis Landier, intégrateur web, designer, portfolio">
     <link rel="icon" type="image/png" href="/img/rel-icon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/theme/website/assets/images/images/touch-icon/touch-icon-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/touch-icon.png" />
+    <link rel="preload" href="9f55a982c90528f32916.woff">
+    <link rel="preload" href="21c028af1b458a12a29e.woff">
+    <link rel="preload" href="b0fca85ee49e3971c045.woff">
+    <link rel="preload" href="f8d47ad7f580d88f4807.woff">
+    <!--
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/theme/website/assets/images/images/touch-icon/touch-icon-ipad.png" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/theme/website/assets/images/images/touch-icon/touch-icon.png" />
     <link rel="icon" sizes="114x114" href="/theme/website/assets/images/images/touch-icon/touch-icon-retina.png" />
+    -->
   </head>
   <body class="white-bg" id="accueil">
     <header class="white-bg position-sticky top-0 left-0 z-ind-3" id="nav-header">
-      <div class="display-flex justify-space-between container padding-top-xs padding-bottom-xs position-relative">
+      <div class="display-flex justify-space-between container padding-top-xs padding-bottom-xs position-relative navbar-container-fix">
         <img class="image-responsive" src="/img/logo-small.svg" alt="logo louis landier" width="38" height="auto" />
         <nav class="display-flex center-align">
           <input class="navbar-menu-check" type="checkbox" id="navbar-menu-check" />
-          <label for="navbar-menu-check">
+          <label for="navbar-menu-check" class="padding-xs">
             <span class="navbar-menu-icon"></span>
             <span class="navbar-menu-icon"></span>
             <span class="navbar-menu-icon"></span>
@@ -50,10 +56,10 @@
               <p class="h1-text font-slim">Louis Landier</h2>
               <h1 class="mega-title margin-top-sm margin-bottom-sm">Intégrateur web, avec une formation de designer web.</h1>
               <div class="col-xs-12 col-sm-12 col-md-7 padding-0 display-flex justify-space-between">
-                <button class="secondary-button">
-                  <span class="position-relative z-ind-2">Mon travail</span>
+                <button class="secondary-button smooth-scroll" data-scroll-to="experience">
+                  <span class="position-relative z-ind-2">Mon expérience</span>
                 </button>
-                <button class="primary-button">
+                <button class="primary-button smooth-scroll" data-scroll-to="contact">
                   <span class="position-relative z-ind-2">Me contacter</span>
                 </button>
               </div>
@@ -73,17 +79,22 @@
       <div class="container">
         <h3 class="h3-title">Qui suis-je ?</h3>
         <div class="display-flex-tablet-desktop justify-space-between center-align">
-          <div class="col-xs-12 col-sm-3">
-            <img class="responsive-img" src="/img/profil-photo.png" alt="photo de profil louis landier" />
+          <div class="col-xs-12 col-sm-3 display-flex-mobile justify-center">
+            <picture>
+              <source class="lazy" srcset="/img/profil-photo.png" media="(min-width: 768px)">
+              <source class="lazy" srcset="/img/profil-photo-m.png" media="(max-width: 768px)">
+              <img src="/img/profil-photo.png" class="responsive-img" alt="photo de profil louis landier" loading="lazy" />
+            </picture>
           </div>
           <div class="col-xs-12 col-sm-8">
-            <p>
-              Je m'appel Louis, et j'ai <span id="current-age">0</span> ans, j'ai fait des études en gestion au lycée, et c'est au lycée que j'ai reçu des notions d'intégration, via des cours d'HTML, et c'est à partir de là que j'ai décidé de me diriger vers cette filière.
-              J'ai étudié l'info-graphie pendant un an, puis j'ai suivi une formation de 2 ans en tant qu'intégrateur web, suivie d'une spécialisation d'un an en web-design, en alternance dans une start-up spécialisée dans la création de web-app.
+            <p class="margin-bottom-xs">
+              Je m’appelle Louis, j’ai <span id="current-age">0</span> ans, j’ai fait des études en gestion au lycée, où j’ai acquis des notions d’intégration, via des cours d’HTML,
+              ce qui m’a convaincu de me diriger vers cette filière. J’ai par la suite étudié l’info-graphie pendant un an, puis j’ai effectué une formation de 2 ans en tant qu’intégrateur web,
+              suivie d’une spécialisation d’un an en web-design, en alternance dans une start-up spécialisée dans la création de web-app.
             </p>
             <p>
-              J'ai ensuite été web designer et intégrateur en même temps dans plusieurs poste, me permettant ainsi d'alterner entre la création de maquette et leur intégration.
-              Après avoir acquis de plus en plus d'expérience j'ai fini par me consacrer uniquement à l'intégration et à la mise en place des best practices pour améliorer les performances et les interfaces sur les quels je travaillais.
+              Ensuite, j’ai exercé dans plusieurs postes les responsabilités de webdesigner et d’intégrateur, ce qui m’a ainsi permis d’alterner la maquette et leur intégration. Après avoir acquis
+              une solide expérience qui a fait ses preuves, j’ai choisi de me consacrer uniquement à l’intégration et à la mise en place des best practices pour améliorer les performances et les interfaces dont j’ai la responsabilité.
             </p>
           </div>
         </div>
@@ -95,7 +106,7 @@
         <div class="display-flex-tablet-desktop row">
           <div class="col-xs-12 col-sm-4 margin-top-md margin-bottom-md">
             <div class="display-flex-mobile justify-center">
-              <img class="responsive-img" src="/img/icon-inte.svg" alt="icone integration" height="80" />
+              <img class="responsive-img" src="/img/icon-inte.svg" alt="icone integration" height="80" loading="lazy" />
             </div>
             <p class="h3-title margin-top-md margin-bottom-xs">
               Intégration HTML / CSS
@@ -108,7 +119,7 @@
           </div>
           <div class="col-xs-12 col-sm-4 margin-top-md margin-bottom-md">
             <div class="display-flex-mobile justify-center">
-              <img class="responsive-img" src="/img/icon-design.svg" alt="icone design" height="80" />
+              <img class="responsive-img" src="/img/icon-design.svg" alt="icone design" height="80" loading="lazy" />
             </div>
             <p class="h3-title margin-top-md margin-bottom-xs">
               Design UX
@@ -117,12 +128,12 @@
               Ancien designer avec une forte sensibilité
               pour l’expérience utilisateur, cela me
               permet de driver les designer sur n’importe
-              quel sujet
+              quel sujet.
             </p>
           </div>
           <div class="col-xs-12 col-sm-4 margin-top-md margin-bottom-md">
             <div class="display-flex-mobile justify-center">
-              <img class="responsive-img" src="/img/icon-atomic.svg" alt="icone atomic" height="80" />
+              <img class="responsive-img" src="/img/icon-atomic.svg" alt="icone atomic" height="80" loading="lazy" />
             </div>
             <p class="h3-title margin-top-md margin-bottom-xs">
               Atomic Design
@@ -148,7 +159,7 @@
               </p>
               <p>
                 J'ai étudié 1 an chez MJM graphique, en tant qu'Info-graphiste pour me former au base du design, et maitriser les logiciels de PAO, tel que Photoshop, Illustrator, InDesign, Flash.
-                Mais très vite j'ai compris que même si le design me plaisait le web m'attirait encore plus, j'ai donc décidé de quitter MJM pour suivre une formation plus approfondie chez Cifacom.
+                Cependant j'ai très vite compris que, même si le design me plaisait, le web m'attirait encore plus. De fait, j'ai décidé de quitter MJM pour suivre une formation plus approfondie chez Cifacom.
               </p>
             </li>
             <li class="timeline">
@@ -157,12 +168,12 @@
                 <span class="text-bold">Janvier 2012 - Septembre 2013</span>:  Formation d’intégrateur en alternance chez myElefant spécialisation web-design, réalisation d’application web et responsive comme Actes Sud/Actes Noir, Téléshopping, Seuil, et site evenementiel pour warner (Tal, Kerredine, Moongaï).
               </p>
               <p>
-                Une fois à cifacom j'ai suivi une formation de deux ans en tant qu'intégrateur Web, avec une préférence pour le design. Où j'ai appris à maitriser le HTML, le CSS, et les rudiments du javascript.Tout en continuant à travailler mes talents de graphiste,
-                mais cette fois axés sur le web design, grâce à des cours de design de PAO, de responsive ou de mobile, pour maîtriser un maximum d'environnement.
+                Une fois à cifacom, j'ai suivi une formation de deux ans en tant qu'intégrateur Web, avec une préférence pour le design. Dans ce cadre, j'ai appris à maitriser le HTML, le CSS, et les rudiments du javascript, tout en continuant à développer mes compétences de graphiste,
+                mais cette fois axées sur le web design, grâce à des cours de design de PAO, de responsive ou de mobile, pour maîtriser un maximum d'environnement.
               </p>
               <p>
-                Ma première année s'est dérouler en initiale, terminée par un stage de 3 mois, j'ai effectué mon stage dans une petite agence web de 6 personnes, Sofracs, un stage court mais très instructif sur les processus d'une petite entreprise.
-                Puis la deuxième année s'est déroulée en alternance, dans une start-up, myElefant, trés orientée mobile, web app, responsive, dans la quelle j'ai passé près de 2 ans.
+                Ma première année s'est déroulée en initiale, et c'est terminée par un stage de 3 mois, j'ai effectué dans une petite agence web de 6 personnes, Sofracs. Ce fut un stage court, mais très instructif sur les processus d'une petite entreprise.
+                Ensuite la deuxième année s'est déroulée en alternance, dans une start-up, myElefant, trés orientée mobile, web app, responsive, dans laquelle j'ai passé 2 ans.
               </p>
             </li>
             <li class="timeline">
@@ -171,8 +182,8 @@
                 <span class="text-bold">Aout 2014 - Avril 2017</span>:  Web designer et intégrateur Web, chez Melijoe, réalisation de maquette web, intégration en responsive et emailing.
               </p>
               <p>
-                Après mes études j'ai eu la chance de trouver un CDI dans l'entreprise Bebeo, en tant que Web Designer / Intégrateur Web,  pour s'occuper du site e-commerce Melijoe, spécialisé dans la mode enfant.
-                Ou j'ai procédé à des envoies de newsletter et à l'intégration de maquette pour le site.
+                Après mes études, j'ai eu la chance de trouver un CDI dans l'entreprise Bebeo, en tant que Web Designer / Intégrateur Web,  pour m'occuper du site e-commerce Melijoe, spécialisé dans la mode enfant.
+                J'ai procédé à des envoies de newsletter et à l'intégration de maquette pour le site.
               </p>
             </li>
             <li class="timeline">
@@ -181,7 +192,7 @@
                 <span class="text-bold">Avril 2017 - Décembre 2017</span>: Consultant pour Ingima chez Boursorama, en tant qu’intégrateur web.
               </p>
               <p>
-                J'ai réalisé l'intégration de plusieurs page sur leur différent portail, le portail bourse et la banque.
+                J'ai réalisé l'intégration de plusieurs pages sur leurs différents portails, le portail bourse et la banque.
                 J'ai découvert chez eux le concept d'atomic design.
               </p>
             </li>
@@ -191,9 +202,9 @@
                 <span class="text-bold">Janvier 2018 - Janvier 2019</span>: Intégrateur Web et web designer chez IZI-by-EDF.
               </p>
               <p>
-                J'ai rejoint le groupe IZI-by-EDF, qui à cette époque s'appelait hellocasa, elle n'avait pas encore rejoin le groupe EDF.
-                J'ai été pris en tant que designer et intégrateur, mes premières tachent alternait entre les deux discipline selon les besoins.
-                Il n'y avait aucun "vrai" intégrateur dans le sens ou personne n'avait reçu de formation spécifique d'intégration à part moi.
+                J'ai rejoint le groupe IZI-by-EDF, qui à cette époque s'appelait hellocasa, elle n'avait pas encore rejoint le groupe EDF.
+                J'ai été engagé en tant que designer et intégrateur, mes premières tâches alternaient entre les deux disciplines selon les besoins.
+                Il n'y avait aucun "vrai" intégrateur dans le sens où personne n'avait reçu de formation spécifique d'intégration, à part moi.
               </p>
             </li>
             <li class="timeline">
@@ -202,8 +213,8 @@
                 <span class="text-bold">Janvier 2019 - Janvier 2020</span>: Intégrateur Web chez IZI-by-EDF, et référant atomic design.
               </p>
               <p>
-                Lorsque le groupe à été racheté la refonte de la charte et des interfaces du site à demandé la mis en place d'un processus d'intégration plus robuste,
-                la dette technique coté intégration était conséquente, j'ai donc pris la responsabilité de superviser la refonte coté intégration avec la mise en place
+                Lorsque le groupe a été racheté, la refonte de la charte et des interfaces du site a demandé la mise en place d'un processus d'intégration plus robuste.
+                Étant donné que la dette technique coté intégration était conséquente, j'ai donc pris la responsabilité de superviser la refonte coté intégration avec la mise en place
                 d'une nouvelle infrastructure appelé 7-1 pattern. Je suis donc devenue référent sur la partie intégration.
               </p>
             </li>
@@ -213,10 +224,10 @@
                 <span class="text-bold">Janvier 2020 - Aujourd'hui</span>: Lead intégrateur chez IZI-by-EDF.
               </p>
               <p>
-                Après avoir mené à bien la refonte de toute les interfaces lors de la transition d'hellocasa vers IZI-by-EDF j'ai été nommé lead intégrateur, avec différentes responsabilité:
+                Après avoir mené à bien la refonte de toutes les interfaces lors de la transition d'hellocasa vers IZI-by-EDF, j'ai été nommé lead intégrateur, avec différentes responsabilités:
                 <ul>
                   <li>
-                    - comme la suppression de la dette technique
+                    - la suppression de la dette technique
                   </li>
                   <li>
                     - mise en place des best practices en intégration et atomic design, autant en css qu'en react
@@ -245,25 +256,25 @@
         <h3 class="h3-title margin-bottom-l">Les outils que j’utilise</h3>
         <div class="display-flex flex-wrap justify-center">
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/sass.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/sass.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/css3.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/css3.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/html5.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/html5.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/javascript.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/javascript.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/github.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/github.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/sketch.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/sketch.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
           <div class="col-xs-6 col-sm-3 display-flex justify-center margin-bottom-xl">
-            <img class="responsive-img" src="/img/react.svg" alt="icone design" width="150" height="auto" />
+            <img class="responsive-img" src="/img/react.svg" alt="icone design" width="150" height="auto" loading="lazy" />
           </div>
         </div>
       </article>

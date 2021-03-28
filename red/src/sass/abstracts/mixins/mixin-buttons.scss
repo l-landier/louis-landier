@@ -19,7 +19,6 @@
   box-shadow: $gradient-primary;
   position: relative;
   overflow: hidden;
-  @include transition-custom(all);
 
   &::after {
     content: '';
@@ -49,7 +48,6 @@
     outline-width: 0;
     color: $color-text-hover;
     background-color: $background-hover;
-    background-size: 150% 1px;
     cursor: pointer;
     @include transition-custom(all);
 
