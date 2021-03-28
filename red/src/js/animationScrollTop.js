@@ -20,11 +20,10 @@ export const animationScrollTop = scrollEndElem => {
     const stamp = new Date().getTime();
     const duration = 1200;
     const start = stamp;
-    const navHeader = document.getElementById('nav-header');
-    const navHeight = navHeader.clientHeight;
+    const navHeader = document.getElementById('nav-header').clientHeight;
     const startScrollOffset = window.pageYOffset;
 
-    const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top - navHeight;
+    const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top - navHeader;
 
     scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
   });
