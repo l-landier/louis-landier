@@ -29,6 +29,7 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  content-visibility: auto;
 
   @media (max-width: $screen-laptop) {
     font-size: $regular-font-size;
