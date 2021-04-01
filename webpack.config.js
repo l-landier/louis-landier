@@ -47,7 +47,7 @@ module.exports = {
     new MiniCssExtractPlugin({
         filename: '[name].css',
     }),
-    //require('autoprefixer'),
+    require('autoprefixer'),
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
