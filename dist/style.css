@@ -223,22 +223,22 @@
 }
 @font-face {
   font-family: "Raleway Bold";
-  src: url(9f55a982c90528f32916.woff) format("woff");
+  src: url(fonts/raleway-800.woff) format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway Medium";
-  src: url(21c028af1b458a12a29e.woff) format("woff");
+  src: url(fonts/raleway-600.woff) format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway Regular";
-  src: url(f8d47ad7f580d88f4807.woff) format("woff");
+  src: url(fonts/raleway-regular.woff) format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway Light";
-  src: url(b0fca85ee49e3971c045.woff) format("woff");
+  src: url(fonts/raleway-100.woff) format("woff");
   font-display: swap;
 }
 * {

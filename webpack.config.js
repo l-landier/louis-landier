@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
+const RemovePlugin = require('remove-files-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -11,7 +12,7 @@ module.exports = {
     'style': './src/sass/style.scss',
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.resolve(__dirname, 'dist'),
   },
   output: {
     filename: '[name].js',
@@ -29,9 +30,17 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      }
     ],
   },
   plugins: [
@@ -49,11 +58,26 @@ module.exports = {
       inline: true,
       minify: true,
       extract: true,
-      width: 375,
-      height: 812,
+      width: 450,
+      height: 900,
       penthouse: {
-        blockJSRequests: false,
+        blockJSRequests: true,
       }
-    })
+    }),
+    new RemovePlugin({
+      /**
+       * After compilation permanently remove empty JS files created from CSS entries.
+       */
+      after: {
+        test: [
+          {
+            folder: path.resolve(__dirname, 'dist'),
+            method: (absoluteItemPath) => {
+              return new RegExp(/style.js$/, 'm').test(absoluteItemPath);
+            },
+          }
+        ]
+      }
+      }),
   ],
 };
