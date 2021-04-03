@@ -1,5 +1,8 @@
 import { animationScrollTop } from './animationScrollTop';
 
+const navLink = document.getElementsByClassName('nav-link');
+const navBarMenuCheck = document.getElementById('navbar-menu-check');
+
 export const smoothScroll = () => {
   const scrollElems = document.getElementsByClassName('smooth-scroll');
 
@@ -29,4 +32,12 @@ export const currentAge = () => {
 window.addEventListener('load', () => {
   smoothScroll();
   currentAge();
+
+  Array.from(navLink).forEach( navLink => {
+    navLink.addEventListener('click', () => {
+      setTimeout(function(){
+        navBarMenuCheck.checked = false;
+      }, 700);
+    });
+  });
 });
