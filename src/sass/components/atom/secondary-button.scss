@@ -3,7 +3,7 @@
   border: solid 1px $primary;
 
   @media (prefers-color-scheme: $dark-mode) {
-    background: $black;
+    background: $real-black;
     color: $white;
   }
 }

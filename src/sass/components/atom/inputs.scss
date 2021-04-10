@@ -2,7 +2,7 @@
   @include input-custom;
 
   @media (prefers-color-scheme: $dark-mode) {
-    background: $black;
+    background: $real-black;
     box-shadow: $gradient-primary;
   }
 }

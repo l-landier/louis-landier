@@ -12,6 +12,7 @@
     height: 2px;
     width: 0;
     background: $primary;
+    border-radius: $radius-button;
 
     @include transition-custom(all);
   }

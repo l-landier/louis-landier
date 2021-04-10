@@ -20,7 +20,7 @@
   background-color: $white;
 
   @media (prefers-color-scheme: $dark-mode) {
-    background: $black;
+    background: $real-black;
     color: $white;
   }
 }

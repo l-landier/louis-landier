@@ -506,7 +506,7 @@ select:-webkit-autofill:focus {
 }
 @media (prefers-color-scheme: dark) {
   .secondary-button {
-    background: #0F1221;
+    background: #000000;
     color: #FFFFFF;
   }
 }
@@ -597,7 +597,7 @@ select:-webkit-autofill:focus {
 }
 @media (prefers-color-scheme: dark) {
   .input-custom {
-    background: #0F1221;
+    background: #000000;
     box-shadow: 0 15px 25px 6px rgba(249, 1, 45, 0.3);
   }
 }
@@ -616,6 +616,7 @@ select:-webkit-autofill:focus {
   height: 2px;
   width: 0;
   background: #F9012D;
+  border-radius: 8px;
   transition: all 0.5s ease;
 }
 .link:visited {
@@ -1452,7 +1453,7 @@ select:-webkit-autofill:focus {
 }
 @media (prefers-color-scheme: dark) {
   .white-bg {
-    background: #0F1221;
+    background: #000000;
     color: #FFFFFF;
   }
 }
