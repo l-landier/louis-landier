@@ -15,6 +15,10 @@
     box-shadow: $shadow-input-focus;
     border: solid 1px $primary;
     outline: 0;
+
+    @media (prefers-color-scheme: $dark-mode) {
+      box-shadow: $gradient-primary;
+    }
   }
 
   /* fix ios zoom on input */

@@ -277,7 +277,7 @@ body {
     font-size: 14px;
   }
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   body {
     background: #0F1221;
   }
@@ -504,7 +504,7 @@ select:-webkit-autofill:focus {
   box-shadow: none;
   background: #a8afbc;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .secondary-button {
     background: #0F1221;
     color: #FFFFFF;
@@ -585,12 +585,17 @@ select:-webkit-autofill:focus {
   border: solid 1px #F9012D;
   outline: 0;
 }
+@media (prefers-color-scheme: dark) {
+  .input-custom:active, .input-custom:focus {
+    box-shadow: 0 15px 25px 6px rgba(249, 1, 45, 0.3);
+  }
+}
 @media (max-width: 1000px) {
   .input-custom {
     font-size: 16px;
   }
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .input-custom {
     background: #0F1221;
     box-shadow: 0 15px 25px 6px rgba(249, 1, 45, 0.3);
@@ -693,7 +698,7 @@ select:-webkit-autofill:focus {
   left: 0;
   z-index: 1;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .timeline::before {
     background: #870017;
   }
@@ -708,7 +713,7 @@ select:-webkit-autofill:focus {
   top: 0;
   left: 22px;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .timeline::after {
     background: #966637;
   }
@@ -1426,7 +1431,7 @@ select:-webkit-autofill:focus {
 .dark-text {
   color: #0F1221;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .dark-text {
     color: #FFFFFF;
   }
@@ -1435,7 +1440,7 @@ select:-webkit-autofill:focus {
 .dark-red {
   color: #870017;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .dark-red {
     color: #FFFFFF;
   }
@@ -1445,7 +1450,7 @@ select:-webkit-autofill:focus {
 .white-bg {
   background-color: #FFFFFF;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .white-bg {
     background: #0F1221;
     color: #FFFFFF;
@@ -1455,9 +1460,9 @@ select:-webkit-autofill:focus {
 .third-bg {
   background-color: #FCEAE2;
 }
-@media (prefers-color-scheme: none) {
+@media (prefers-color-scheme: dark) {
   .third-bg {
-    background: #500E19;
+    background: #870017;
     color: #FFFFFF;
   }
 }

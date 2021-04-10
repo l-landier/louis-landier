@@ -29,7 +29,7 @@
   background-color: $third;
 
   @media (prefers-color-scheme: $dark-mode) {
-    background: $dark-red;
+    background: $primary-dark;
     color: $white;
   }
 }
