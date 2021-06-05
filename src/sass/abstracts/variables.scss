@@ -11,14 +11,14 @@ $grey-light: #F7F7F7;
 $grey-dark: #a8afbc;
 $gradient-button: linear-gradient(0.75turn, $secondary, $primary);
 $gradient-button-hover: linear-gradient(0.75turn, $secondary, $none);
-$gradient-primary: 0 15px 25px 6px rgba(249, 1, 45, .3);
+$gradient-primary: 0 15px 25px 6px rgba(220, 129, 96, .3);
 
 // COLORS DARK MODE //
-$dark-red: #500E19;
-$dark-orange: #966637;
-//$dark-mode: dark;
-//$dark-mode: light;
-$dark-mode: none;
+$dark-orange: #DC8160;
+$dark-bg: #2C3340;
+//$dark-orange: #966637;
+//$dark-orange: #966637;
+$dark-mode: dark;
 
 // Font-Weight //
 $font-weight-light: 100;
