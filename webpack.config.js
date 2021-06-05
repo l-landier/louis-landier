@@ -49,7 +49,13 @@ module.exports = {
     }),
     require('autoprefixer'),
     new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'index.html',
       template: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'realisation-izi.html',
+      template: 'realisation-izi.html'
     }),
     new HtmlCriticalWebpackPlugin({
       base: path.resolve(__dirname, 'dist'),
